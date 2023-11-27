@@ -32211,6 +32211,7 @@ GameObject:
   - component: {fileID: 1064457438}
   - component: {fileID: 1064457437}
   - component: {fileID: 1064457436}
+  - component: {fileID: 1064457439}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -32292,6 +32293,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1064457439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064457435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4407d02d2cc9ad4498d3cb840801db75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 1306932797}
 --- !u!1 &1306932797
 GameObject:
   m_ObjectHideFlags: 0
@@ -32308,7 +32322,6 @@ GameObject:
   - component: {fileID: 1306932811}
   - component: {fileID: 1306932810}
   - component: {fileID: 1306932809}
-  - component: {fileID: 1306932808}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -32428,7 +32441,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: 0}
+  m_Actions: {fileID: -944628639613478452, guid: 50114052e890e1947bf48975be7bb26a, type: 3}
   m_NotificationBehavior: 0
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
@@ -32443,21 +32456,9 @@ MonoBehaviour:
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: 
+  m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &1306932808
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1306932797}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27ef1ca2622a73e4da8b39f1e7a40d2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1306932809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32482,7 +32483,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2f170f7cdccee247a536d9da1cb4598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterRenderer: {fileID: 0}
+  characterRenderer: {fileID: 630387042}
 --- !u!114 &1306932811
 MonoBehaviour:
   m_ObjectHideFlags: 0

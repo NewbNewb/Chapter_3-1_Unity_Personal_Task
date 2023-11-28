@@ -28,6 +28,7 @@ public class PlayerInputContrller : TopDownCharacterContoller
         Vector2 worldpos = _camera.ScreenToWorldPoint(newAim);
         // 내 캐릭터에서 마우스 까지 거리와 방향을 알 수 있다.
         newAim = (worldpos - (Vector2)transform.position).normalized;
+
         // 거기서 normalized 을 사용해 대각선 값을 1로 고정
 
 

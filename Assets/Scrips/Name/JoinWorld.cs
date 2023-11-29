@@ -2,11 +2,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+
 public class JoinWorld : MonoBehaviour
 {
     [SerializeField] private GameObject _NameLengthError;
     [SerializeField] private InputField _InputText;
-    public string _name { get; set; }
+    public static string _name { get; set; }
 
     public void MainSceneStart()
     {
